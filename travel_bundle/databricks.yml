@@ -32,7 +32,7 @@ targets:
       host: https://dbc-61fb5c94-e1d3.cloud.databricks.com
     variables:
       catalog: workspace
-      schema: ${workspace.current_user.short_name}
+      schema: dev_travel
   prod:
     mode: production
     workspace:
@@ -41,7 +41,7 @@ targets:
       root_path: /Workspace/Users/cheami90@gmail.com/.bundle/${bundle.name}/${bundle.target}
     variables:
       catalog: workspace
-      schema: prod
+      schema: travel
     permissions:
       - user_name: cheami90@gmail.com
         level: CAN_MANAGE

@@ -1,0 +1,18 @@
+# The main pipeline for travel_data_etl
+
+resources:
+  pipelines:
+    travel_data_etl:
+      name: travel_pipeline_${var.catalog}
+      catalog: ${var.catalog}
+      schema: default
+      serverless: true
+      root_path: "../src/travel_data_etl"
+
+      libraries:
+        - glob:
+            include: ../src/travel_data_etl/transformations/**
+
+      environment:
+        dependencies:
+          - --editable ${workspace.file_path}

@@ -17,8 +17,6 @@ artifacts:
 variables:
   catalog:
     description: The catalog to use
-  schema:
-    description: The schema to use
 
 targets:
   dev:
@@ -31,8 +29,7 @@ targets:
     workspace:
       host: https://dbc-61fb5c94-e1d3.cloud.databricks.com
     variables:
-      catalog: workspace
-      schema: dev_travel
+      catalog: dev
   prod:
     mode: production
     workspace:
@@ -40,8 +37,7 @@ targets:
       # We explicitly deploy to /Workspace/Users/cheami90@gmail.com to make sure we only have a single copy.
       root_path: /Workspace/Users/cheami90@gmail.com/.bundle/${bundle.name}/${bundle.target}
     variables:
-      catalog: workspace
-      schema: travel
+      catalog: prod
     permissions:
       - user_name: cheami90@gmail.com
         level: CAN_MANAGE

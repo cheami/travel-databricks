@@ -31,7 +31,7 @@ To run this project in your own Databricks environment (including Databricks Com
 ### 2. Data Ingestion (Unity Catalog Volumes)
 * **Note:** This project adheres to Databricks best practices by explicitly avoiding the deprecated DBFS (Databricks File System).
 * In your Databricks workspace, navigate to **Catalog**.
-* Create a Volume under your chosen catalog and schema (e.g., `/Volumes/workspace/travel/travel_data_volume/`).
+* Create a Volume under your chosen catalog and schema (e.g., `/Volumes/workspace/data_landing/travel_volume/`).
 * Manually upload your raw CSV and JSON files into their respective subdirectories (`fitbit/`, `flight_logs/`, `google_timeline/`, etc.) within the Volume.
 
 ### 3. Deployment & Execution

@@ -1,5 +1,5 @@
 [project]
-name = "travel_bundle"
+name = "travel_data_etl"
 version = "0.0.1"
 authors = [{ name = "cheami90@gmail.com" }]
 requires-python = ">=3.10,<3.13"
@@ -19,9 +19,6 @@ dev = [
     "databricks-connect>=15.4,<15.5",
     "ipykernel",
 ]
-
-[project.scripts]
-main = "travel_bundle.main:main"
 
 [build-system]
 requires = ["hatchling"]

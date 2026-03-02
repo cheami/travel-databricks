@@ -1,0 +1,19 @@
+resources:
+  jobs:
+    travel_pipeline_dev_job:
+      name: travel_pipeline_dev_job
+      trigger:
+        periodic:
+          interval: 1
+          unit: DAYS
+      tasks:
+        - task_key: pipeline-task-71789361-4586-426d-bf8c-5255cce64b1f
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.travel_data_etl.id}
+      notification_settings:
+        no_alert_for_skipped_runs: true
+      email_notifications:
+        on_failure:
+          - cheami90@gmail.com
+      queue:
+        enabled: true

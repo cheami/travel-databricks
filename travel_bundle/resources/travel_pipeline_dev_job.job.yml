@@ -2,6 +2,7 @@ resources:
   jobs:
     travel_pipeline_dev_job:
       name: travel_pipeline_dev_job
+      enabled: true
       trigger:
         periodic:
           interval: 1

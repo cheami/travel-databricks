@@ -28,6 +28,8 @@ targets:
     default: true
     workspace:
       host: https://dbc-61fb5c94-e1d3.cloud.databricks.com
+    presets:
+      trigger_history_enabled: true
     variables:
       catalog: dev
   prod:

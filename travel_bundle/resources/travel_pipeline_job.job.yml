@@ -1,7 +1,7 @@
 resources:
   jobs:
-    travel_pipeline_dev_job:
-      name: travel_pipeline_dev_job
+    travel_pipeline_job:
+      name: travel_pipeline_job_${var.catalog}
       enabled: true
       trigger:
         periodic:

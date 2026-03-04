@@ -1,4 +1,4 @@
-CREATE MATERIALIZED VIEW silver_sleep_score AS
+CREATE MATERIALIZED VIEW silver.sleep_score AS
 SELECT
   sleep_log_entry_id AS Sleep_Log_Entry_Id,
   timestamp AS Timestamp,

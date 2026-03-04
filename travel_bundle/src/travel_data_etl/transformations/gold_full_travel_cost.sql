@@ -17,8 +17,8 @@ SELECT
   format_number(SUM(try_cast(regexp_replace(t.Amount, '[$,]', '') AS DOUBLE)), 2) AS Daily_Total,
   format_number(SUM(SUM(try_cast(regexp_replace(t.Amount, '[$,]', '') AS DOUBLE))) OVER (ORDER BY ml.Date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), 2) AS Running_Total_Amount,
   format_number(AVG(SUM(try_cast(regexp_replace(t.Amount, '[$,]', '') AS DOUBLE))) OVER (ORDER BY ml.Date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), 2) AS Running_Daily_Average
-FROM dev.silver.manual_log ml
-LEFT JOIN dev.silver.transaction t ON ml.Date = t.Date
+FROM silver.manual_log ml
+LEFT JOIN silver.transaction t ON ml.Date = t.Date
 GROUP BY
   ml.Day,
   ml.Date,

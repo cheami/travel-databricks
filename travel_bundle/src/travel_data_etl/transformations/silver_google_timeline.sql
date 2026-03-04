@@ -29,7 +29,7 @@ SELECT
     -- 4. TIMELINE MEMORY / TRIP DATA (Flattened Struct + Exploded Array)
     seg.timelineMemory.trip.distanceFromOriginKms AS trip_distance_from_origin_kms,
     trip_dest.identifier.placeId AS trip_destination_place_id
-FROM dev.bronze.google_timeline
+FROM bronze.google_timeline
 LATERAL VIEW EXPLODE_OUTER(raw_json.semanticSegments) exploded_segments AS seg
 LATERAL VIEW EXPLODE_OUTER(seg.timelinePath) exploded_paths AS path_point
 LATERAL VIEW EXPLODE_OUTER(seg.timelineMemory.trip.destinations) exploded_destinations AS trip_dest

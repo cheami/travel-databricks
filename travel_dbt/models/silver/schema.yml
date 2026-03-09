@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: transaction
+    columns:
+      - name: Date
+        tests:
+          - not_null
+      - name: Type
+        tests:
+          - not_null
+      - name: Amount
+        tests:
+          - not_null

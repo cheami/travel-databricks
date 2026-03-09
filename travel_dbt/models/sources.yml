@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bronze
+    catalog: "{{ target.name }}"
+    schema: bronze
+    tables:
+      - name: flight_log
+      - name: google_timeline
+      - name: fitbit_heart_rate
+      - name: fitbit_steps
+      - name: fitbit_sleep_score
+      - name: transaction
+      - name: manual_log

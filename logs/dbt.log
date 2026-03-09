@@ -1,0 +1,181 @@
+[0m22:45:36.763343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfd6fc14d3880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfd6fc0268fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfd6fc0268f70>]}
+
+
+============================== 22:45:36.766197 | 323a2f78-09d7-499a-a35c-deef104cc3b1 ==============================
+[0m22:45:36.766197 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:45:36.766586 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init travel_dbt', 'cache_selected_only': 'False', 'write_json': 'True', 'introspect': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'empty': 'None', 'debug': 'False', 'partial_parse': 'True', 'version_check': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/home/cheami-linux/.dbt', 'use_experimental_parser': 'False', 'no_print': 'None'}
+[0m22:45:36.774975 [info ] [MainThread]: Creating dbt configuration folder at /home/cheami-linux/.dbt
+[0m22:45:36.776585 [debug] [MainThread]: Starter project path: /home/cheami-linux/travel-databricks/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m22:45:36.783323 [info ] [MainThread]: 
+Your new dbt project "travel_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:45:36.783745 [info ] [MainThread]: Setting up your profile.
+[0m22:45:47.917086 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m22:45:47.917633 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m22:45:47.918184 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m22:54:24.104214 [info ] [MainThread]: Profile travel_dbt written to /home/cheami-linux/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:54:24.113909 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 511.04056, "process_in_blocks": "3096", "process_kernel_time": 0.54595, "process_mem_max_rss": "216928", "process_out_blocks": "88", "process_user_time": 3.328113}
+[0m22:54:24.119446 [debug] [MainThread]: Command `dbt init` succeeded at 22:54:24.119195 after 511.05 seconds
+[0m22:54:24.121114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfd6fc14d3880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfd6fc0269de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfd6fc02697e0>]}
+[0m22:54:24.123147 [debug] [MainThread]: Flushing usage events
+[0m22:54:25.218080 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:54:32.508533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf174ba8078e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf174b9593af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf174b9593a60>]}
+
+
+============================== 22:54:32.511899 | 78eb30a8-08ed-431f-b844-812089946074 ==============================
+[0m22:54:32.511899 [info ] [MainThread]: Running with dbt=1.11.6
+[0m22:54:32.512489 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_path': 'logs', 'no_print': 'None', 'use_colors': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'introspect': 'True', 'version_check': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error': 'None', 'write_json': 'True', 'profiles_dir': '/home/cheami-linux/.dbt', 'quiet': 'False', 'printer_width': '80'}
+[0m22:54:32.522168 [info ] [MainThread]: dbt version: 1.11.6
+[0m22:54:32.522819 [info ] [MainThread]: python version: 3.10.12
+[0m22:54:32.525779 [info ] [MainThread]: python path: /home/cheami-linux/travel-databricks/.venv/bin/python3
+[0m22:54:32.526215 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-aarch64-with-glibc2.35
+[0m22:54:33.238706 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m22:54:33.239418 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m22:54:33.239702 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m22:54:33.775281 [info ] [MainThread]: Using profiles dir at /home/cheami-linux/.dbt
+[0m22:54:33.775834 [info ] [MainThread]: Using profiles.yml file at /home/cheami-linux/.dbt/profiles.yml
+[0m22:54:33.776066 [info ] [MainThread]: Using dbt_project.yml file at /home/cheami-linux/travel-databricks/dbt_project.yml
+[0m22:54:33.776272 [info ] [MainThread]: adapter type: databricks
+[0m22:54:33.776461 [info ] [MainThread]: adapter version: 1.11.5
+[0m22:54:33.777165 [info ] [MainThread]: Configuration:
+[0m22:54:33.777403 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:54:33.777620 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:54:33.777962 [info ] [MainThread]: Required dependencies:
+[0m22:54:33.778169 [debug] [MainThread]: Executing "git --help"
+[0m22:54:33.785227 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:54:33.785889 [debug] [MainThread]: STDERR: "b''"
+[0m22:54:33.786187 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:54:33.786627 [info ] [MainThread]: Connection:
+[0m22:54:33.786897 [info ] [MainThread]:   host: https://dbc-61fb5c94-e1d3.cloud.databricks.com/?o=7474646260475336
+[0m22:54:33.787135 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/8af3de395e1da77c
+[0m22:54:33.787432 [info ] [MainThread]:   catalog: workspace
+[0m22:54:33.787694 [info ] [MainThread]:   schema: default
+[0m22:54:33.793219 [info ] [MainThread]: Registered adapter: databricks=1.11.5
+[0m22:54:33.911745 [warn ] [MainThread]: [[33mWARNING[0m]: Use managed Iceberg tables when table_format is iceberg. When this flag is disabled, UniForm is used instead.
+You may opt into the new behavior sooner by setting `flags.use_managed_iceberg` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m22:54:33.912774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '78eb30a8-08ed-431f-b844-812089946074', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf174b725d510>]}
+[0m22:54:33.913463 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m22:54:33.913711 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m22:54:33.913948 [debug] [MainThread]: Using databricks connection "debug"
+[0m22:54:33.914163 [debug] [MainThread]: On debug: select 1 as id
+[0m22:54:33.914382 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:16:09.006334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfe9acc6e3880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfe9acb479030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfe9acb478fd0>]}
+
+
+============================== 23:16:09.011591 | 3bbec2ce-7ec5-46ec-b6cf-29748daf17fc ==============================
+[0m23:16:09.011591 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:16:09.012068 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'printer_width': '80', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'partial_parse': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'write_json': 'True', 'profiles_dir': '/home/cheami-linux/.dbt', 'static_parser': 'True', 'use_colors': 'True', 'version_check': 'True', 'log_format': 'default', 'target_path': 'None', 'empty': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init travel_dbt', 'cache_selected_only': 'False'}
+[0m23:16:09.033743 [debug] [MainThread]: Starter project path: /home/cheami-linux/travel-databricks/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m23:16:09.044806 [info ] [MainThread]: 
+Your new dbt project "travel_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:16:09.045461 [info ] [MainThread]: Setting up your profile.
+[0m23:16:21.092318 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 10.576525, "process_in_blocks": "39760", "process_kernel_time": 0.299134, "process_mem_max_rss": "93736", "process_out_blocks": "64", "process_user_time": 1.28758}
+[0m23:16:21.093337 [debug] [MainThread]: Command `dbt init` succeeded at 23:16:21.093249 after 10.58 seconds
+[0m23:16:21.093793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfe9acc6e3880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfe9acb479e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xfe9acb478f70>]}
+[0m23:16:21.094177 [debug] [MainThread]: Flushing usage events
+[0m23:16:22.091014 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:18:11.147204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3f933637850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3f9323c9000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3f9323c8fa0>]}
+
+
+============================== 23:18:11.150292 | a6386a59-59cd-48f2-a4f4-5a61c2271de9 ==============================
+[0m23:18:11.150292 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:18:11.151072 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'version_check': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'target_path': 'None', 'log_path': 'logs', 'debug': 'False', 'no_print': 'None', 'profiles_dir': '/home/cheami-linux/.dbt', 'empty': 'None', 'log_format': 'default', 'write_json': 'True', 'static_parser': 'True', 'printer_width': '80', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'invocation_command': 'dbt init travel_dbt', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False'}
+[0m23:18:11.160191 [debug] [MainThread]: Starter project path: /home/cheami-linux/travel-databricks/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m23:18:11.165305 [info ] [MainThread]: 
+Your new dbt project "travel_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:18:11.165804 [info ] [MainThread]: Setting up your profile.
+[0m23:18:15.637752 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:18:15.638293 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:18:15.638512 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:18:41.609410 [info ] [MainThread]: Profile travel_dbt written to /home/cheami-linux/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:18:41.613280 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 28.973305, "process_in_blocks": "52776", "process_kernel_time": 0.462598, "process_mem_max_rss": "216828", "process_out_blocks": "80", "process_user_time": 3.629619}
+[0m23:18:41.614486 [debug] [MainThread]: Command `dbt init` succeeded at 23:18:41.614352 after 28.97 seconds
+[0m23:18:41.615045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3f933637850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3f9323c8f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3f9323c9f60>]}
+[0m23:18:41.615604 [debug] [MainThread]: Flushing usage events
+[0m23:18:42.739529 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:19:39.423443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf04bdcdb7880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf04bdbb49000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf04bdbb48fa0>]}
+
+
+============================== 23:19:39.428590 | fafcf457-ad03-4b6d-9889-c0bb1f993625 ==============================
+[0m23:19:39.428590 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:19:39.429573 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'log_format': 'default', 'profiles_dir': '/home/cheami-linux/.dbt', 'debug': 'False', 'indirect_selection': 'eager', 'printer_width': '80', 'no_print': 'None', 'static_parser': 'True', 'empty': 'None', 'introspect': 'True', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'quiet': 'False', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'fail_fast': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True'}
+[0m23:19:39.438059 [info ] [MainThread]: dbt version: 1.11.6
+[0m23:19:39.439000 [info ] [MainThread]: python version: 3.10.12
+[0m23:19:39.439522 [info ] [MainThread]: python path: /home/cheami-linux/travel-databricks/.venv/bin/python3
+[0m23:19:39.439813 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-aarch64-with-glibc2.35
+[0m23:19:40.408534 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:19:40.409201 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:19:40.409532 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:19:42.975124 [info ] [MainThread]: Using profiles dir at /home/cheami-linux/.dbt
+[0m23:19:42.975801 [info ] [MainThread]: Using profiles.yml file at /home/cheami-linux/.dbt/profiles.yml
+[0m23:19:42.976457 [info ] [MainThread]: Using dbt_project.yml file at /home/cheami-linux/travel-databricks/dbt_project.yml
+[0m23:19:42.977073 [info ] [MainThread]: adapter type: databricks
+[0m23:19:42.977438 [info ] [MainThread]: adapter version: 1.11.5
+[0m23:19:42.977733 [info ] [MainThread]: Configuration:
+[0m23:19:42.978017 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:19:42.978301 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:19:42.978579 [info ] [MainThread]: Required dependencies:
+[0m23:19:42.978881 [debug] [MainThread]: Executing "git --help"
+[0m23:19:42.982248 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:19:42.982839 [debug] [MainThread]: STDERR: "b''"
+[0m23:19:42.983122 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:19:42.983438 [info ] [MainThread]: Connection:
+[0m23:19:42.983735 [info ] [MainThread]:   host: dbc-61fb5c94-e1d3.cloud.databricks.com
+[0m23:19:42.984037 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/8af3de395e1da77c
+[0m23:19:42.984789 [info ] [MainThread]:   catalog: dev
+[0m23:19:42.985124 [info ] [MainThread]:   schema: silver
+[0m23:19:42.987834 [info ] [MainThread]: Registered adapter: databricks=1.11.5
+[0m23:19:43.101731 [warn ] [MainThread]: [[33mWARNING[0m]: Use managed Iceberg tables when table_format is iceberg. When this flag is disabled, UniForm is used instead.
+You may opt into the new behavior sooner by setting `flags.use_managed_iceberg` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m23:19:43.103241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'fafcf457-ad03-4b6d-9889-c0bb1f993625', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf04bdbad7520>]}
+[0m23:19:43.103964 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m23:19:43.104556 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m23:19:43.104918 [debug] [MainThread]: Using databricks connection "debug"
+[0m23:19:43.105165 [debug] [MainThread]: On debug: select 1 as id
+[0m23:19:43.105406 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:19:44.456750 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f11af9-daa6-1c7d-9bb4-89581dc8c512) - Created

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: full_travel_cost
+    columns:
+      - name: Date
+        tests:
+          - not_null
+          - unique
+      - name: Country
+        tests:
+          - not_null
+      - name: Daily_Total
+        tests:
+          - not_null

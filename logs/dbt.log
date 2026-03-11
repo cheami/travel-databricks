@@ -179,3 +179,19 @@ Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more
 [0m23:19:43.105165 [debug] [MainThread]: On debug: select 1 as id
 [0m23:19:43.105406 [debug] [MainThread]: Opening a new connection, currently in state init
 [0m23:19:44.456750 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f11af9-daa6-1c7d-9bb4-89581dc8c512) - Created
+[0m17:45:58.481518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3e9a85095d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3e9a9a3e6b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3e9a9a3e110>]}
+
+
+============================== 17:45:58.545256 | d0870499-ba95-495e-9758-d1acee05daac ==============================
+[0m17:45:58.545256 [info ] [MainThread]: Running with dbt=1.11.6
+[0m17:45:58.545887 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'write_json': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'quiet': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'no_print': 'None', 'profiles_dir': '/home/cheami-linux/.dbt', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'debug': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'version_check': 'True'}
+[0m17:45:58.546774 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/cheami-linux/travel-databricks/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:45:58.548818 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.14348982, "process_in_blocks": "106608", "process_kernel_time": 0.953196, "process_mem_max_rss": "108540", "process_out_blocks": "25608", "process_user_time": 2.501668}
+[0m17:45:58.549785 [debug] [MainThread]: Command `dbt run` failed at 17:45:58.549654 after 0.14 seconds
+[0m17:45:58.550307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3e9a85095d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3e9a82aa5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xf3e9a9a3e6b0>]}
+[0m17:45:58.551074 [debug] [MainThread]: Flushing usage events
+[0m17:45:59.559721 [debug] [MainThread]: An error was encountered while trying to flush usage events

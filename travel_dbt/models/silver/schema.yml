@@ -9,6 +9,84 @@ models:
       - name: Type
         tests:
           - not_null
+          - accepted_values:
+              values: ['Hotel', 'Food', 'Travel', 'Activity', 'Misc']
       - name: Amount
+        tests:
+          - not_null
+
+  - name: manual_log
+    columns:
+      - name: Date
+        tests:
+          - not_null
+          - unique
+      - name: Country
+        tests:
+          - not_null
+      - name: City
+        tests:
+          - not_null
+
+  - name: flight_log
+    columns:
+      - name: Date
+        tests:
+          - not_null
+      - name: Flight_Number
+        tests:
+          - not_null
+      - name: From_IATA
+        tests:
+          - not_null
+      - name: To_IATA
+        tests:
+          - not_null
+      - name: From_IATA
+        tests:
+          - not_null
+
+  - name: sleep_score
+    columns:
+      - name: Sleep_Log_Entry_Id
+        tests:
+          - not_null
+          - unique
+      - name: Timestamp
+        tests:
+          - not_null
+      - name: Sleep_Quality
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Excellent', 'Good', 'Fair', 'Poor']
+
+  - name: hourly_steps_and_heart_rate
+    columns:
+      - name: Start_Hour
+        tests:
+          - not_null
+          - unique
+      - name: Steps
+        tests:
+          - not_null
+
+  - name: google_timeline_activity
+    columns:
+      - name: segment_start_time
+        tests:
+          - not_null
+          - unique
+      - name: activity_type
+        tests:
+          - not_null
+
+  - name: google_timeline_visit
+    columns:
+      - name: segment_start_time
+        tests:
+          - not_null
+          - unique
+      - name: visit_place_id
         tests:
           - not_null

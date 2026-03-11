@@ -34,4 +34,10 @@ flags:
 # files using the `{{ config(...) }}` macro.
 models:
   travel_dbt:
+    staging:
+      +schema: staging
+    silver:
+      +schema: silver_dbt
+    gold:
+      +schema: gold_dbt
     +materialized: table

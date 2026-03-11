@@ -1,4 +1,4 @@
-{{ config(materialized='incremental', unique_key='segment_start_time') }}
+{{ config(materialized='view') }}
 
 SELECT
     -- 1. BASE SEGMENT TIMING

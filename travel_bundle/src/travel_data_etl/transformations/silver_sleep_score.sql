@@ -16,5 +16,5 @@ SELECT
     ELSE 'Poor'
   END AS Sleep_Quality
 FROM bronze.fitbit_sleep_score
-WHERE timestamp >= DATE '2025-02-25'  --Start of World Travel
+WHERE timestamp >= DATE '2025-02-25' AND timestamp <= DATE '2026-03-12'
 ORDER BY timestamp ASC;

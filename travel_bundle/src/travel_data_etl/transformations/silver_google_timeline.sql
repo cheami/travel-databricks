@@ -33,7 +33,7 @@ FROM bronze.google_timeline
 LATERAL VIEW EXPLODE_OUTER(raw_json.semanticSegments) exploded_segments AS seg
 LATERAL VIEW EXPLODE_OUTER(seg.timelinePath) exploded_paths AS path_point
 LATERAL VIEW EXPLODE_OUTER(seg.timelineMemory.trip.destinations) exploded_destinations AS trip_dest
-WHERE seg.startTime >= '2025-02-25'
+WHERE seg.startTime >= '2025-02-25' AND seg.startTime <= '2026-03-12'
   AND path_point.time IS NULL;
 
 

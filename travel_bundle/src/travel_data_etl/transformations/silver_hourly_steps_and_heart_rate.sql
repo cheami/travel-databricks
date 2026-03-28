@@ -26,5 +26,5 @@ LEFT JOIN (
     date_trunc('hour', timestamp)
 ) h
 ON s.Start_Hour = h.Start_Hour
-WHERE s.Start_Hour >= DATE '2025-02-25'  --Start of World Travel
+WHERE s.Start_Hour >= DATE '2025-02-25' and s.start_hour <= DATE '2026-03-12'
 ORDER BY s.Start_Hour ASC;
